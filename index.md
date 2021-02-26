@@ -21,10 +21,10 @@ Syntax highlighted code block
 
 **Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
+[Link](url) ![Image](src)
 ```
 
-[Link](StartMenu.html) and ![Image]("Game/Assets/brick.png")
+[Link](StartMenu.html) ![Image]("Game/Assets/brick.png")
 
 ### Hauptspiel
 

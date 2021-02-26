@@ -5,7 +5,6 @@ Entstehungszeitraum: 09/2019 - 07/2020
 ### Verteidigung beispiel
 
 ### Hauptspiel
-[Spiel](StartMenu.html) ![Image](Game/Assets/icon.png)
 
-[<img src="http://www.google.com.au/images/nav_logo7.png">](http://google.com.au/)
-[![Foo](http://www.google.com.au/images/nav_logo7.png)](http://google.com.au/)
+[<img src="Game/Assets/icon.png">](StartMenu.html)
+

@@ -2,19 +2,19 @@
     <title>The Moving</title>
     <meta charset="UTF-8">
     <head>
-        <link rel="stylesheet" href="stylesheet0.css">
-
-        <items>
-            <a href="GameModes.html"><li><button>Game Modes</button></li></a>
-            <a href="OtherModes.html"><li><button>Other Modes</button></li></a>
-            <a href="Game/Credits.html"><li><button>Credits</button></li></a>
-            <a onclick="location='Game/MovingGame.zip'"><li><button>Download the Game</button></li></a>
-        </items>
-
         <script>
 
             var brick = new Image();        //Super-Mario-Block
             brick.src = "Game/Assets/brick.png";
+
+            var blue = new Image();
+            blue.src = "Game/Assets/whiteMode.png";
+
+            var wood = new Image();
+            wood.src = "Game/Assets/woodBrick.png";
+
+            var iron = new Image();
+            iron.src = "Game/Assets/ironBrick.png";
 
             function drawFrame(){
                 // Diese Funktion wird nur einmal ausgeführt (nach Laden der Seite)
@@ -50,7 +50,36 @@
                 //Überschrift
                 ctx.fillStyle = "white";
                 ctx.font = "100px Phosphate"
-                ctx.fillText("The Moving", 225,200);
+                ctx.fillText("Select Pattern", 160,200);
+
+                ctx.drawImage(brick, 250, 300, 150, 150);
+                ctx.drawImage(blue, 600, 300, 150, 150);
+                ctx.drawImage(wood, 250, 650, 150, 150);
+                ctx.drawImage(iron, 600, 650, 150, 150);
+
+            }
+
+            function clicked(){
+                var pointerX = event.clientX - 8;
+                var pointerY = event.clientY - 8;
+
+                if(pointerY >= 300 && pointerY <= 450){
+                    if(pointerX >= 250 && pointerX <= 400){
+                        open("Game/Moving.html");
+                        window.close();
+                    }else if(pointerX >= 600 && pointerX <= 750){
+                        open("Game/MovingWhite.html");
+                        window.close();
+                    }
+                }else if(pointerY >= 650 && pointerY <= 800){
+                    if(pointerX >= 250 && pointerX <= 400){
+                        open("Game/MovingWood.html");
+                        window.close();
+                    }else if(pointerX >= 600 && pointerX <= 750){
+                        open("Game/MovingIron.html");
+                        window.close();
+                    }
+                }
             }
 
         </script>
@@ -58,6 +87,6 @@
     </head>
 
     <body onload="drawFrame()">
-        <canvas   id="gc" width="1500" height="1000"></canvas>
+        <canvas onclick="clicked()" id="gc" width="1500" height="1000"></canvas>
     </body>
 </html>

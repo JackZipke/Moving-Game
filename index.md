@@ -6,4 +6,4 @@ Entstehungszeitraum: 09/2019 - 07/2020
 
 ### Hauptspiel
 [Spiel](StartMenu.html) ![Image](Game/Assets/icon.png)
-Hauptspiel
+

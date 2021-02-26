@@ -24,8 +24,6 @@ Syntax highlighted code block
 [Link](url) ![Image](src)
 ```
 
-[Link](StartMenu.html) ![Image](Game/Assets/icon.png)
-
 ### Hauptspiel
-
+[Spiel](StartMenu.html) ![Image](Game/Assets/icon.png)
 Hauptspiel

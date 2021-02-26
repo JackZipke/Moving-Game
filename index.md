@@ -1,63 +1,37 @@
-<html>
-    <title>The Moving</title>
-    <meta charset="UTF-8">
-    <head>
-        <link rel="stylesheet" href="stylesheet0.css">
+## Welcome to GitHub Pages
 
-        <items>
-            <a href="GameModes.html"><li><button>Game Modes</button></li></a>
-            <a href="OtherModes.html"><li><button>Other Modes</button></li></a>
-            <a href="Game/Credits.html"><li><button>Credits</button></li></a>
-            <a onclick="location='Game/MovingGame.zip'"><li><button>Download the Game</button></li></a>
-        </items>
+You can use the [editor on GitHub](https://github.com/JackZipke/Moving-Game/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
-        <script>
+Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-            var brick = new Image();        //Super-Mario-Block
-            brick.src = "Game/Assets/brick.png";
+### Markdown
 
-            function drawFrame(){
-                // Diese Funktion wird nur einmal ausgeführt (nach Laden der Seite)
+Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-                canv=document.getElementById("gc");         // Canvas aus HTML Teil ansteuern
-                ctx=canv.getContext("2d");                  // Kontext zum "zeichnen" festlegen
+```markdown
+Syntax highlighted code block
 
-                ctx.fillStyle = "black";
-                ctx.fillRect(0,0,1000,1000);
+# Header 1
+## Header 2
+### Header 3
 
-                //Rahmen wird gemahlt
-                var brickPosition = [0,0];
-                for(var i = 0; i<= 19; i++){    //obere Reihe
-                    ctx.drawImage(brick, brickPosition[0], brickPosition[1]);
-                    brickPosition[0] += 50;
-                }
-                brickPosition = [0,950];
-                for(var i = 0; i<= 19; i++){    //untere Reihe
-                    ctx.drawImage(brick, brickPosition[0], brickPosition[1]);
-                    brickPosition[0] += 50;
-                }
-                brickPosition = [0,50];
-                for(var i = 0; i<=18; i++){     //linke Spalte
-                    ctx.drawImage(brick, brickPosition[0], brickPosition[1]);
-                    brickPosition[1] += 50;
-                }
-                brickPosition = [950,50];
-                for(var i = 0; i<=18; i++){     //rechte Spalte
-                    ctx.drawImage(brick, brickPosition[0], brickPosition[1]);
-                    brickPosition[1] += 50;
-                }
+- Bulleted
+- List
 
-                //Überschrift
-                ctx.fillStyle = "white";
-                ctx.font = "100px Phosphate"
-                ctx.fillText("The Moving", 225,200);
-            }
+1. Numbered
+2. List
 
-        </script>
+**Bold** and _Italic_ and `Code` text
 
-    </head>
+[Link](url) and ![Image](src)
+```
 
-    <body onload="drawFrame()">
-        <canvas   id="gc" width="1500" height="1000"></canvas>
-    </body>
-</html>
+For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+
+### Jekyll Themes
+
+Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/JackZipke/Moving-Game/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+
+### Support or Contact
+
+Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.

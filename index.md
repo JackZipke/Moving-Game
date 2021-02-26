@@ -4,7 +4,7 @@ Entstehungszeitraum: 09/2019 - 07/2020
 
 ### Vorführbeispiel
 
-[<img src="Ordner.png">](Vorführbeispiel/Moving.html)
+[<img src="Ordner.png" heigth="400">](Vorführbeispiel/Moving.html)
 
 ### Hauptspiel
 
